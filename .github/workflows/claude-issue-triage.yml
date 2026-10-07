@@ -82,6 +82,12 @@ jobs:
                - ## Criterios de aceptación
                - ## Preguntas abiertas (solo si el issue es ambiguo o falta información)
 
+            Formato: todo lo que escribas en `.triage/diagnosis.md` (que se publicará como comentario en el issue)
+            debe estar en Markdown compatible con GitHub (GFM) para que GitHub lo renderice correctamente:
+            usa encabezados `##`, listas con `-` o `1.`, `código en línea` entre backticks, bloques de código con
+            triple backtick y lenguaje (```js), tablas GFM y listas de tareas (`- [ ]`) para los criterios de
+            aceptación. No uses HTML ni texto plano sin formato.
+
             No modifiques ningún otro archivo. No escribas nada fuera de `.triage/`.
 
       - name: Publicar labels y diagnóstico
