@@ -51,9 +51,10 @@ const SKINS = {
       context.shadowColor = color;
       context.shadowBlur = 12;
       context.fillStyle = color;
-      context.globalAlpha *= 0.35;
+      const a = context.globalAlpha;
+      context.globalAlpha = a * 0.35;
       context.fillRect(px, py, s, s);
-      context.globalAlpha /= 0.35;
+      context.globalAlpha = a;
       context.strokeStyle = color;
       context.lineWidth = 2;
       context.strokeRect(px, py, s, s);
@@ -391,6 +392,7 @@ function init() {
 }
 
 document.addEventListener('keydown', e => {
+  if (e.target === skinSelect) return;
   if (e.code === 'KeyP') { togglePause(); return; }
   if (paused || gameOver) return;
   switch (e.code) {
