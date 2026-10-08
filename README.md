@@ -88,6 +88,8 @@ Después abre `http://localhost:8000` en el navegador.
 
 El botón **Modo claro / Modo oscuro** (esquina superior derecha) alterna el tema. Por defecto el juego inicia en modo oscuro.
 
+El selector de **skin** (junto al botón de tema) cambia la apariencia al instante: **Retro** (bloques planos), **Neon** (fondo negro con glow), **Pastel** (colores suaves y esquinas redondeadas) y **Pixel art** (textura sobre cada bloque). La elección se guarda en `localStorage` (`tetris-skin`).
+
 ---
 
 ## Cómo funciona
